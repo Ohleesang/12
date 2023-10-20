@@ -1,0 +1,22 @@
+package com.example.a12
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        class Solution {
+            fun solution(arr: IntArray): Double {
+                var answer = 0.0
+                var result :Int = arr.sum()
+                answer= result.toDouble()/arr.size
+                return answer
+            }
+        }
+        val a : Solution
+        a.solution(intArrayOf(1,2,3,4))
+        a.solution(intArrayOf(5,5))
+    }
+}
